@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Mini Audio Player</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+
+    <audio id="player" src="Heyf2.mp3"></audio>
+    <div class="player">
+        <div class="control">
+            <i class="fas fa-play" id="playbtn"></i>
+        </div>
+        <div class="info">
+            TheFatRat - Electrified
+            <div class="bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="current">0:00</div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
