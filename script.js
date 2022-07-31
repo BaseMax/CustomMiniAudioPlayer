@@ -38,3 +38,7 @@ elm_player_audio.ontimeupdate = () => {
     elm_current.innerHTML = timeFormat(current_time);
     elm_progress.style.setProperty("--progress", progress + "%");
 };
+
+document.addEventListener("keydown", (e) => {
+    if (e.keyCode === 32) elm_play.click();
+});
