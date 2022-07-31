@@ -32,8 +32,6 @@ elm_player_audio.onpause = () => {
 elm_player_audio.ontimeupdate = () => {
     const current_time = elm_player_audio.currentTime;
     const progress = Math.floor((current_time * 100) / elm_player_audio.duration);
-    console.log(current_time);
-    console.log(progress);
 
     elm_current.innerHTML = timeFormat(current_time);
     elm_progress.style.setProperty("--progress", progress + "%");
