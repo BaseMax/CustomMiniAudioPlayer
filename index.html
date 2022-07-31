@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 </head>
 <body>
-
-    <audio id="player" src="Heyf2.mp3"></audio>
+    <audio class="player__audio" src="Dont_You_Remember.mp3"></audio>
     <div class="player">
         <div class="control">
-            <i class="fas fa-play" id="playbtn"></i>
+            <i class="fas fa-play player__play"></i>
         </div>
-        <div class="info">
-            TheFatRat - Electrified
-            <div class="bar">
-                <div id="progress"></div>
+        <div class="player__info">
+            Don't You Remember - Adele
+            <div class="player__bar">
+                <div class="player__progress"></div>
             </div>
         </div>
-        <div id="current">0:00</div>
+        <div class="player__current">0:00</div>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
