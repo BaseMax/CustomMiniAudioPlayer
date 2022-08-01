@@ -39,8 +39,6 @@ elm_player_audio.ontimeupdate = () => {
 
 document.addEventListener("keydown", (e) => {
     if (e.keyCode === 32) elm_play.click();
-    // handle right arrow for going to next 5s
     else if (e.keyCode === 39) elm_player_audio.currentTime += 5;
-    // handle left arrow for going back to prev 5s
     else if (e.keyCode === 37) elm_player_audio.currentTime -= 5;
 });
