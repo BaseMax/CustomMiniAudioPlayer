@@ -70,3 +70,6 @@ body {
     transition: all 1s linear;
     width: var(--progress,0%);
 }
+.player__progress.stopped {
+    background-color: orange;
+}
