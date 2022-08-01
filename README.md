@@ -2,6 +2,10 @@
 
 A customized audio player which can detect the duration and current time and progress of playing songs and show them in custom style b getting help from **Javascript**.
 
+**Demo:** https://basemax.github.io/CustomMiniAudioPlayer/
+
+[![Custom Mini Audio Player](preview.jpg)](https://basemax.github.io/CustomMiniAudioPlayer/)
+
 ## Features
 
 - Detect duration of an audio song
@@ -9,6 +13,4 @@ A customized audio player which can detect the duration and current time and pro
 - Calculate progress of current time
 - Play/Resume of audio playing by the `space` key or clicking an icon
 
-**Demo:** https://basemax.github.io/CustomMiniAudioPlayer/
-
-[![Custom Mini Audio Player](preview.jpg)](https://basemax.github.io/CustomMiniAudioPlayer/)
+The main idea is from https://www.youtube.com/watch?v=IO7Mh31fHs4.
