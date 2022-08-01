@@ -15,8 +15,14 @@ const timeFormat = (ct) => {
 
 // Events
 elm_play.addEventListener("click", () => {
-    if (elm_player_audio.paused) elm_player_audio.play();
-    else elm_player_audio.pause();
+    if (elm_player_audio.paused) {
+        elm_player_audio.play();
+        elm_progress.classList.remove("stopped");
+    }
+    else {
+        elm_player_audio.pause();
+        elm_progress.classList.add("stopped");
+    }
 });
 
 elm_player_audio.onplay = () => {
@@ -39,6 +45,8 @@ elm_player_audio.ontimeupdate = () => {
 
 document.addEventListener("keydown", (e) => {
     if (e.keyCode === 32) elm_play.click();
+    // handle right arrow for going to next 5s
     else if (e.keyCode === 39) elm_player_audio.currentTime += 5;
+    // handle left arrow for going back to prev 5s
     else if (e.keyCode === 37) elm_player_audio.currentTime -= 5;
 });
